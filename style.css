@@ -1,0 +1,46 @@
+html,
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  width: 50vw;
+  height: 100%;
+  background-color: aliceblue;
+  border: 1vw solid aliceblue;
+}
+.line {
+  display: flex;
+}
+.box {
+  width: 5vw;
+  height: 5vw;
+  border: 0.1vw solid black;
+}
+
+#buttons_container {
+  display: none;
+  width: 33vw;
+  height: 25vw;
+  /* display: flex; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.buttons_box {
+  width: 11vw;
+  height: 11vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1vw;
+  /* background-color: aliceblue; */
+  /* border: 1vw solid black; */
+}
+.buttons_box img {
+  width: 8vw;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <section
+      style="
+        gap: 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      "
+    >
+      <div class="container">
+        <div class="line">
+          <div class="box" id="00" style="background-color: red"></div>
+          <div class="stop box" id="01" style="background-color: black"></div>
+          <div class="stop box" id="02" style="background-color: black"></div>
+          <div class="stop box" id="03" style="background-color: black"></div>
+          <div class="stop box" id="04" style="background-color: black"></div>
+          <div class="stop box" id="05" style="background-color: black"></div>
+          <div class="stop box" id="06" style="background-color: black"></div>
+          <div class="stop box" id="07" style="background-color: black"></div>
+          <div class="box" id="08"></div>
+          <div class="box" id="09"></div>
+        </div>
+        <div class="line">
+          <div class="box" id="10"></div>
+          <div class="stop box" id="11" style="background-color: black"></div>
+          <div class="box" id="12"></div>
+          <div class="box" id="13"></div>
+          <div class="box" id="14"></div>
+          <div class="box" id="15"></div>
+          <div class="box" id="16"></div>
+          <div class="box" id="17"></div>
+          <div class="box" id="18"></div>
+          <div class="box" id="19"></div>
+        </div>
+        <div class="line">
+          <div class="box" id="20"></div>
+          <div class="stop box" id="21" style="background-color: black"></div>
+          <div class="stop box" id="22" style="background-color: black"></div>
+          <div class="stop box" id="23" style="background-color: black"></div>
+          <div class="stop box" id="24" style="background-color: black"></div>
+          <div class="stop box" id="25" style="background-color: black"></div>
+          <div class="box" id="26"></div>
+          <div class="stop box" id="27" style="background-color: black"></div>
+          <div class="stop box" id="28" style="background-color: black"></div>
+          <div class="box" id="29"></div>
+        </div>
+        <div class="line">
+          <div class="box" id="30"></div>
+          <div class="box" id="31"></div>
+          <div class="box" id="32"></div>
+          <div class="box" id="33"></div>
+          <div class="box" id="34"></div>
+          <div class="stop box" id="35" style="background-color: black"></div>
+          <div class="box" id="36"></div>
+          <div class="stop box" id="37" style="background-color: black"></div>
+          <div class="box" id="38"></div>
+          <div class="box" id="39"></div>
+        </div>
+        <div class="line">
+          <div class="stop box" id="40" style="background-color: black"></div>
+          <div class="stop box" id="41" style="background-color: black"></div>
+          <div class="stop box" id="42" style="background-color: black"></div>
+          <div class="stop box" id="43" style="background-color: black"></div>
+          <div class="box" id="44"></div>
+          <div class="stop box" id="45" style="background-color: black"></div>
+          <div class="box" id="46"></div>
+          <div class="stop box" id="47" style="background-color: black"></div>
+          <div class="box" id="48"></div>
+          <div class="box" id="49"></div>
+        </div>
+        <div class="line">
+          <div class="box" id="50"></div>
+          <div class="box" id="51"></div>
+          <div class="box" id="52"></div>
+          <div class="box" id="53"></div>
+          <div class="box" id="54"></div>
+          <div class="box" id="55"></div>
+          <div class="box" id="56"></div>
+          <div class="stop box" id="57" style="background-color: black"></div>
+          <div class="stop box" id="58" style="background-color: black"></div>
+          <div class="stop box" id="59" style="background-color: black"></div>
+        </div>
+        <div class="line">
+          <div class="stop box" id="60" style="background-color: black"></div>
+          <div class="box" id="61"></div>
+          <div class="stop box" id="62" style="background-color: black"></div>
+          <div class="box" id="63"></div>
+          <div class="stop box" id="64" style="background-color: black"></div>
+          <div class="stop box" id="65" style="background-color: black"></div>
+          <div class="box" id="66"></div>
+          <div class="box" id="67"></div>
+          <div class="stop box" id="68" style="background-color: black"></div>
+          <div class="green box" id="69" style="background-color: green"></div>
+        </div>
+        <div class="line">
+          <div class="stop box" id="70" style="background-color: black"></div>
+          <div class="box" id="71"></div>
+          <div class="stop box" id="72" style="background-color: black"></div>
+          <div class="box" id="73"></div>
+          <div class="box" id="74"></div>
+          <div class="stop box" id="75" style="background-color: black"></div>
+          <div class="stop box" id="76" style="background-color: black"></div>
+          <div class="stop box" id="77" style="background-color: black"></div>
+          <div class="stop box" id="78" style="background-color: black"></div>
+          <div class="box" id="79"></div>
+        </div>
+        <div class="line">
+          <div class="stop box" id="80" style="background-color: black"></div>
+          <div class="box" id="81"></div>
+          <div class="stop box" id="82" style="background-color: black"></div>
+          <div class="box" id="83"></div>
+          <div class="box" id="84"></div>
+          <div class="stop box" id="85" style="background-color: black"></div>
+          <div class="box" id="86"></div>
+          <div class="box" id="87"></div>
+          <div class="stop box" id="88" style="background-color: black"></div>
+          <div class="box" id="89"></div>
+        </div>
+        <div class="line">
+          <div class="box" id="90"></div>
+          <div class="box" id="91"></div>
+          <div class="box" id="92"></div>
+          <div class="box" id="93"></div>
+          <div class="box" id="94"></div>
+          <div class="stop box" id="95" style="background-color: black"></div>
+          <div class="box" id="96"></div>
+          <div class="box" id="97"></div>
+          <div class="box" id="98"></div>
+          <div class="box" id="99"></div>
+        </div>
+      </div>
+
+      <div id="buttons_container">
+        <div class="buttons_box"></div>
+        <div
+          class="buttons_box"
+          id="buttonUp"
+          style="background-color: aliceblue"
+        >
+          <img src="./images/arrowup.png" alt="" />
+        </div>
+        <div class="buttons_box"></div>
+        <div
+          class="buttons_box"
+          id="buttonLeft"
+          style="background-color: aliceblue"
+        >
+          <img src="./images/arrowleft.png" alt="" />
+        </div>
+        <div class="buttons_box"></div>
+        <div
+          class="buttons_box"
+          id="buttonRight"
+          style="background-color: aliceblue"
+        >
+          <img src="./images/arrowright.png" alt="" />
+        </div>
+        <div class="buttons_box"></div>
+        <div
+          class="buttons_box"
+          id="buttonDown"
+          style="background-color: aliceblue"
+        >
+          <img src="./images/arrowdown.png" alt="" />
+        </div>
+        <div class="buttons_box"></div>
+      </div>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>
