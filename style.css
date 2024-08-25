@@ -30,6 +30,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  touch-action: manipulation;
 }
 .buttons_box {
   width: 11vw;
@@ -38,9 +39,11 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 1vw;
+  touch-action: manipulation;
   /* background-color: aliceblue; */
   /* border: 1vw solid black; */
 }
 .buttons_box img {
   width: 8vw;
+  touch-action: manipulation;
 }
