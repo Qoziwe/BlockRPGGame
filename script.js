@@ -188,6 +188,9 @@ document.addEventListener(
   },
   { passive: false }
 );
+document.addEventListener("gesturestart", function (e) {
+  e.preventDefault();
+});
 
 let details = navigator.userAgent;
 let regexp = /android|iphone|kindle|ipad/i;
