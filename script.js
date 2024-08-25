@@ -179,6 +179,19 @@ document.getElementById("buttonRight").onclick = function () {
   makeActionRight(player_position);
 };
 
+// var lastTouchEnd = 0;
+// document.addEventListener(
+//   "touchend",
+//   function (event) {
+//     var now = new Date().getTime();
+//     if (now - lastTouchEnd <= 300) {
+//       event.preventDefault();
+//     }
+//     lastTouchEnd = now;
+//   },
+//   false
+// );
+
 let details = navigator.userAgent;
 let regexp = /android|iphone|kindle|ipad/i;
 let isMobileDevice = regexp.test(details);
@@ -186,14 +199,3 @@ if (isMobileDevice) {
   document.getElementById("buttons_container").style.display = "flex";
 } else {
 }
-
-document.addEventListener(
-  "touchstart",
-  (event) => {
-    if (event.touches.length > 1) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-  },
-  { passive: false }
-);
