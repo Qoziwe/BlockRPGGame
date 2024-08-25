@@ -179,18 +179,15 @@ document.getElementById("buttonRight").onclick = function () {
   makeActionRight(player_position);
 };
 
-// var lastTouchEnd = 0;
-// document.addEventListener(
-//   "touchend",
-//   function (event) {
-//     var now = new Date().getTime();
-//     if (now - lastTouchEnd <= 300) {
-//       event.preventDefault();
-//     }
-//     lastTouchEnd = now;
-//   },
-//   false
-// );
+document.addEventListener(
+  "touchstart",
+  function (event) {
+    if (event.touches.length > 1) {
+      event.preventDefault();
+    }
+  },
+  { passive: false }
+);
 
 let details = navigator.userAgent;
 let regexp = /android|iphone|kindle|ipad/i;
